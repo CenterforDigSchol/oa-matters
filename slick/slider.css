@@ -1,0 +1,32 @@
+    * {
+      box-sizing: border-box;
+    }
+    #annualmap.slider {
+        width: 75%;
+        margin: 0px auto;
+        padding: 0px;
+        }
+    #wordcloud.slider-nav {
+        width: 60%;
+        margin: 10px auto;
+        padding:0px;
+        }
+    #wordcloud.slider-for {
+    	width: 35%;
+        margin: 20px auto;
+       bottom:-30px;
+        
+        }
+
+    .slick-slide {
+      margin: 0px 20px;
+      bottom: -30px;
+      padding:-30px;
+    }
+    .slick-slide img {
+      width: 100%;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+        color: black;
+    }

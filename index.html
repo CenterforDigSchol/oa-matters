@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>OA Matters @ IUPUI</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="css/scrolling-nav.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+	  <div class="container">
+		<a class="navbar-brand js-scroll-trigger" href="#page-top">OA Matters @ IUPUI</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+		  <ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+			  <a class="nav-link js-scroll-trigger" href="#about">Stories</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link js-scroll-trigger" href="#oamap">Map</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+			</li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+
+	<header class="bg-primary text-white" id="mainHeader">
+	  <div class="container text-center">
+		<h1>OA Matters</h1>
+	  </div>
+	</header>
+
+	<section id="about">
+	  <div class="container">
+		<div class="row">
+		  <div class="col-lg-8 mx-auto">
+			<h2>Stories</h2>
+			<div class="content-slider">
+  <div class="slider">
+
+    <div class="mask">
+      <ul>
+        <li class="anim1 student">
+          <div class="quote">Pay-walls to access scholarly journals create gatekeeping that limits access to leading, peer-reviewed research. 
+          It essentially creates a disconnect between experts in respective fields and students and the ‘lay-man.’.</div>
+          <div class="source">- Student Survey Response</div>
+        </li>
+        <li class="anim2 student">
+          <div class="quote">Knowledge should be accessed by all. It's how society can fully innovate.</div>
+          <div class="source">- Student Survey Response</div>
+        </li>
+        <li class="anim3 student">
+          <div class="quote">Research should be available at low to no cost so people have 
+          the ability to properly educate themselves on subjects of interest. Subscription 
+          fees only serve as a barrier for people who want to educate themselves, but do 
+          not have the means to do so.</div>
+          <div class="source">- Student Survey Response</div>
+        </li>
+        <li class="anim4 faculty">
+          <div class="quote">ScholarWorks brings a great opportunity for faculty who are 
+          translational researchers … the result is easy and open access to faculty articles… 
+          so that all interested parties can readily discover the evidence behind the work 
+          of their partnerships to solve community problems.</div>
+          <div class="source">- Steve Viehweg</div>
+        </li>
+        <li class="anim5 faculty">
+          <div class="quote">The increased access to our work through an online repository 
+          has allowed stakeholders to fully leverage the information while also promoting 
+          collaboration with other researchers.</div>
+          <div class="source">- Connor Norwood</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+			<!-- jQuery -->
+			<script src="js/jquery.js"></script>
+  			 <!-- Slick -->
+  			<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+ 			 <script type="text/javascript">
+    			$(document).on('ready', function() {
+     			$(".slider").slick({
+      			dots: false,
+    			arrows: true,
+    			infinite: true,
+       			centerMode: true,
+        		autoplay: true,
+        		autoplaySpeed: 650,
+        		pauseOnHover: true,
+        		fade: true,
+        		cssEase: 'linear'
+      });
+      
+    });
+  </script>               
+
+		  </div>
+		</div>
+	  </div>
+	</section>
+	<section id="oamap" class="bg-light">
+	<div class="container">
+	 <div class="row">
+		  <div class="col-xl-auto mx-auto">
+		  <!-- DataMaps Plugins -->
+			<script src="https://d3js.org/d3.v3.min.js"></script>
+			<script src="https://d3js.org/topojson.v3.min.js"></script>
+			<script src="js/datamaps.world.min.js"></script>
+			<div id="container1" style="width:800px; height: 500px;"></div>
+				<script>
+					var map = new Datamap({
+					element: document.getElementById('container1'),
+					projection: 'mercator',
+					geographyConfig: {
+						highlightFillColor: '#EDEBEB',
+						highlightBorderColor:'#808080',
+						popupTemplate: function(geography, data) {
+      					return '<div class="hoverinfo">' + geography.properties.name + '<br />' +
+						'File Downloads:' + ' ' + data.downloads + '<br />' +
+						'Item Views:' + ' ' + data.views + '<br />' +
+						'Total:' + ' ' + data.sum + ' '
+    						}
+					},
+					data : {   //This data was last pulled on November 1, 2018
+					"USA" :{ "fillKey" : "five", "country" : "United States","downloads" : "2,092,430","views" : "1,264,465","sum" : "3,356,895"},
+					"DEU" :{ "fillKey" : "five","country" : "Germany","downloads" : "260,853","views" : "177,596","sum" : "438,449"},
+					"GBR" :{"fillKey" : "five", "country" : "United Kingdom","downloads" : "175,260","views" : "74,518","sum" : "249,778"}, 
+					"CHN" :{ "fillKey" : "five","country" : "China","downloads" : "121,775","views" : "55,624", "sum" : "177,399"},
+					"IND" :{"fillKey" : "five","country" : "India","downloads" : "134,188", "views" : "19,183", "sum" : "153,371"}, 
+					"CAN" :{"fillKey" : "five","country" : "Canada", "downloads" : "118,051", "views" : "30,226","sum" : "148,277"},
+					"PHL" :{"fillKey" : "five","country" : "Philippines", "downloads" : "89,271","views" : "11,611","sum" : "100,882"},
+					"RUS" :{"fillKey" : "four", "country" : "Russia","downloads" : "49,139","views" : "41,065","sum" : "90,204"}, 
+					"AUS" :{"fillKey" : "four","country" : "Australia","downloads" : "55,074","views" : "18,162", "sum" : "73,236"},
+					"MYS" :{ "fillKey" : "four","country" : "Malaysia","downloads" : "62,212","views" : "10,585", "sum" : "72,797"},
+					"FRA" :{"fillKey" : "four","country" : "France","downloads" : "43,709", "views" : "22,284","sum" : "65,993"},
+					"ROK" :{"fillKey" : "four","country" : "South Korea", "downloads" : "38,175","views" : "24,514","sum" : "62,689"},
+					"MEX" :{"fillKey" : "four", "country" : "Mexico","downloads" : "48,271","views" : "5,347","sum" : "53,618"},
+					"NLD" :{ "fillKey" : "four","country" : "Netherlands","downloads" : "41,426","views" : "11,461", "sum" : "52,887"},
+					"JPN" :{"fillKey" : "four","country" : "Japan","downloads" : "30,841", "views" : "20,147","sum" : "50,988"},
+					"ITA" :{ "fillKey" : "four","country" : "Italy", "downloads" : "20,872","views" : "29,794","sum" : "50,666"},
+					"IDN" :{ "fillKey" : "three", "country" : "Indonesia", "downloads" : "37,669","views" : "5,197","sum" : "42,866"}, 
+					"UKR" :{ "fillKey" : "three","country" : "Ukraine","downloads" : "33,693","views" : "6,061", "sum" : "39,754"},
+					"POL" :{"fillKey" : "three","country" : "Poland","downloads" : "14,092", "views" : "24,207","sum" : "38,299"},
+					"ESP" :{"fillKey" : "three","country" : "Spain", "downloads" : "27,582","views" : "8,980","sum" : "36,562"},
+					"TUR" :{"fillKey" : "three", "country" : "Turkey","downloads" : "26,489","views" : "5,900","sum" : "32,389"},
+					"THA" :{"fillKey" : "three","country" : "Thailand","downloads" : "26,432", "views" : "4,016","sum" : "30,448"},
+					"ZAF" :{"fillKey" : "three","country" : "South Africa", "downloads" : "22,595","views" : "5,559","sum" : "28,154"},
+					"ROU" :{"fillKey" : "three", "country" : "Romania","downloads" : "23,344","views" : "4,417","sum" : "27,761"}, 
+					"PAK" :{"fillKey" : "three","country" : "Pakistan","downloads" : "21,222", "views" : "3,574","sum" : "24,796"},
+					"VEN" :{"fillKey" : "three","country" : "Venezuela", "downloads" : "22,938","views" : "749","sum" : "23,687"},
+					"SGP" :{"fillKey" : "three", "country" : "Singapore","downloads" : "19,908","views" : "3,575","sum" : "23,483"}, 
+					"EGY" :{"fillKey" : "three","country" : "Egypt","downloads" : "18,660", "views" : "3,005", "sum" : "21,665"},
+					"PER" :{"fillKey" : "three","country" : "Peru","downloads" : "18,288", "views" : "1,282","sum" : "19,570"},
+					"SWE" :{"fillKey" : "three","country" : "Sweden", "downloads" : "12,947","views" : "6,420","sum" : "19,367"},
+					"HKG" :{"fillKey" : "three", "country" : "Hong Kong","downloads" : "14,802","views" : "4,340","sum" : "19,142"},
+					"TWN" :{"fillKey" : "three","country" : "Taiwan","downloads" : "13,210","views" : "5,558", "sum" : "18,768"},
+					"KAZ" :{"fillKey" : "three","country" : "Kazakhstan","downloads" : "17,816", "views" : "201","sum" : "18,017"},
+					"COL" :{"fillKey" : "three","country" : "Colombia", "downloads" : "15,824","views" : "1,912","sum" : "17,736"},
+					"IRN" :{"fillKey" : "three", "country" : "Iran","downloads" : "13,364","views" : "3,218","sum" : "16,582"}, 
+					"BRA" :{"fillKey" : "three","country" : "Brazil","downloads" : "11,172","views" : "4,286", "sum" : "15,458"}, 
+					"IRL" :{"fillKey" : "three", "country" : "Ireland","downloads" : "10,617", "views" : "3,122","sum" : "13,739"},
+					"NGA" :{"fillKey" : "three","country" : "Nigeria", "downloads" : "11,353","views" : "1,463","sum" : "12,816"},
+					"KEN" :{"fillKey" : "three", "country" : "Kenya","downloads" : "10,133","views" : "2,442","sum" : "12,575"},
+					"NZL" :{ "fillKey" : "three","country" : "New Zealand","downloads" : "9,340","views" : "3,096", "sum" : "12,436"},
+					"DNK" :{"fillKey" : "three","country" : "Denmark","downloads" : "7,186", "views" : "5,121","sum" : "12,307"},
+					"ISR" :{"fillKey" : "three","country" : "Israel", "downloads" : "7,037","views" : "5,200","sum" : "12,237"},
+					"VNM" :{"fillKey" : "three", "country" : "Vietnam","downloads" : "10,165","views" : "1,884","sum" : "12,049"}, 
+					"AUT" :{"fillKey" : "three","country" : "Austria","downloads" : "7,862","views" : "3,819", "sum" : "11,681"},
+					"CHE" :{"fillKey" : "three","country" : "Switzerland","downloads" : "7,381", "views" : "4,043","sum" : "11,424"},
+					"FIN" :{"fillKey" : "three","country" : "Finland", "downloads" : "9,637","views" : "1,679","sum" : "11,316"},
+					"SAU" :{"fillKey" : "three", "country" : "Saudi Arabia","downloads" : "9,047","views" : "2,012","sum" : "11,059"}, 
+					"ETH" :{"fillKey" : "three","country" : "Ethiopia","downloads" : "9,783","views" : "711", "sum" : "10,494"},
+					"BEL" :{"fillKey" : "three","country" : "Belgium","downloads" : "7,749", "views" : "2,515","sum" : "10,264"},
+					"CHL" :{"fillKey" : "three","country" : "Chile", "downloads" : "8,734","views" : "1,508","sum" : "10,242"},
+					"GRC" :{"fillKey" : "three", "country" : "Greece","downloads" : "7,646","views" : "2,574","sum" : "10,220"}, 
+					"ARG" :{"fillKey" : "two","country" : "Argentina","downloads" : "8,638","views" : "1,162", "sum" : "9,800"},
+					"ARE" :{ "fillKey" : "two","country" : "United Arab Emirates", "downloads" : "7,437", "views" : "1,442","sum" : "8,879"},
+					"PRT" :{"fillKey" : "two","country" : "Portugal", "downloads" : "6,548","views" : "2,279","sum" : "8,827"},
+					"PRI" :{"fillKey" : "two", "country" : "Puerto Rico","downloads" : "7,872","views" : "841","sum" : "8,713"},
+					"NOR" :{"fillKey" : "two","country" : "Norway","downloads" : "5,558","views" : "2,075", "sum" : "7,633"},
+					"LKA" :{"fillKey" : "two","country" : "Sri Lanka","downloads" : "5,478", "views" : "892","sum" : "6,370"},
+					"GHA" :{"fillKey" : "two","country" : "Ghana","downloads" : "4,862", "views" : "667","sum" : "5,529"},
+					"MLT" :{"fillKey" : "two","country" : "Malta","downloads" : "5,147", "views" : "273","sum" : "5,420"},
+					"CZE" :{"fillKey" : "two","country" : "Czech Republic", "downloads" : "3,720","views" : "1,696","sum" : "5,416"},
+					"DZA" :{"fillKey" : "two","country" : "Algeria","downloads" : "4,718","views" : "657","sum" : "5,375"},
+					"JOR" :{"fillKey" : "two","country" : "Jordan","downloads" : "4,327","views" : "587","sum" : "4,914"},
+					"LTU" :{"fillKey" : "two","country" : "Lithuania","downloads" : "3,499","views" : "1,240","sum" : "4,739"},
+					"SRB" :{"fillKey" : "two","country" : "Serbia","downloads" : "3,386","views" : "953","sum" : "4,339"},
+					"DOM" :{"fillKey" : "two","country" : "Dominican Republic","downloads" : "4,071","views" : "177","sum" : "4,248"},
+					"ECU" :{"fillKey" : "two","country" : "Ecuador","downloads" : "3,738","views" : "479","sum" : "4,217"},
+					"UGA" :{"fillKey" : "two","country" : "Uganda","downloads" : "3,721", "views" : "482","sum" : "4,203"},
+					"JAM" :{"fillKey" : "two","country" : "Jamaica","downloads" : "3,614","views" : "589","sum" : "4,203"},
+					"BGD" :{"fillKey" : "two", "country" : "Bangladesh","downloads" : "3,542", "views" : "547","sum" : "4,089"},
+					"GTM" :{ "fillKey" : "two","country" : "Guatemala","downloads" : "3,337","views" : "155","sum" : "3,492"},
+					"MUS" :{"fillKey" : "two","country" : "Mauritius","downloads" : "2,443","views" : "1,027","sum" : "3,470"},
+					"HRV" :{"fillKey" : "two","country" : "Croatia","downloads" : "2,513", "views" : "881","sum" : "3,394"},
+					"LBN" :{ "fillKey" : "two", "country" : "Lebanon", "downloads" : "2,766", "views" : "580", "sum" : "3,346" },
+					"TUN" :{ "fillKey" : "two", "country" : "Tunisia", "downloads" : "2,845", "views" : "500", "sum" : "3,345" },
+					"HUN" :{ "fillKey" : "two", "country" : "Hungary", "downloads" : "2,428", "views" : "859", "sum" : "3,287" },
+					"TTO" :{ "fillKey" : "two", "country" : "Trinidad and Tobago", "downloads" : "2,552", "views" : "544", "sum" : "3,096" },
+					"IRQ" :{ "fillKey" : "two", "country" : "Iraq", "downloads" : "2,636", "views" : "387", "sum" : "3,023" },
+					"ZWE" :{ "fillKey" : "two", "country" : "Zimbabwe", "downloads" : "2,646", "views" : "372", "sum" : "3,018" },
+					"BGR" :{ "fillKey" : "two", "country" : "Bulgaria", "downloads" : "2,283", "views" : "694", "sum" : "2,977" },
+					"TZA" :{ "fillKey" : "two", "country" : "Tanzania", "downloads" : "2,588", "views" : "326", "sum" : "2,914" },
+					"NPL" :{ "fillKey" : "two", "country" : "Nepal", "downloads" : "2,445", "views" : "384", "sum" : "2,829" },
+					"BWA" :{ "fillKey" : "two", "country" : "Botswana", "downloads" : "2,476", "views" : "256", "sum" : "2,732" },
+					"SVN" :{ "fillKey" : "two", "country" : "Slovenia", "downloads" : "2,131", "views" : "595", "sum" : "2,726" },
+					"LAO" :{ "fillKey" : "two", "country" : "Laos", "downloads" : "2,610", "views" : "59", "sum" : "2,669" },
+					"CRI" :{ "fillKey" : "two", "country" : "Costa Rica", "downloads" : "2,250", "views" : "278", "sum" : "2,528" },
+					"MAR" :{ "fillKey" : "two", "country" : "Morocco", "downloads" : "2,162", "views" : "358", "sum" : "2,520" },
+					"BOL" :{ "fillKey" : "two", "country" : "Bolivia", "downloads" : "2,362", "views" : "137", "sum" : "2,499" },
+					"SVK" :{ "fillKey" : "two", "country" : "Slovakia", "downloads" : "1,829", "views" : "632", "sum" : "2,461" },
+					"BHS" :{ "fillKey" : "two", "country" : "Bahamas", "downloads" : "2,194", "views" : "148", "sum" : "2,342" },
+					"QAT" :{ "fillKey" : "two", "country" : "Qatar", "downloads" : "1,741", "views" : "556", "sum" : "2,297" },
+					"PAN" :{ "fillKey" : "two", "country" : "Panama", "downloads" : "1,808", "views" : "225", "sum" : "2,033" },
+					"ZMB" :{ "fillKey" : "two", "country" : "Zambia", "downloads" : "1,821", "views" : "198", "sum" : "2,019" },
+					"EST" :{ "fillKey" : "two", "country" : "Estonia", "downloads" : "1,476", "views" : "378", "sum" : "1,854" },
+					"LVA" :{ "fillKey" : "two", "country" : "Latvia", "downloads" : "1,430", "views" : "418", "sum" : "1,848" },
+					"OMN" :{ "fillKey" : "two", "country" : "Oman", "downloads" : "1,437", "views" : "269", "sum" : "1,706" },
+					"ALB" :{ "fillKey" : "two", "country" : "Albania", "downloads" : "1,243", "views" : "274", "sum" : "1,517" },
+					"SDN" :{ "fillKey" : "two", "country" : "Sudan", "downloads" : "1,313", "views" : "190", "sum" : "1,503" },
+					"SLV" :{ "fillKey" : "two", "country" : "El Salvador", "downloads" : "1,287", "views" : "91", "sum" : "1,378" },
+					"BRB" :{ "fillKey" : "two", "country" : "Barbados", "downloads" : "1,202", "views" : "165", "sum" : "1,367" },
+					"LBY" :{ "fillKey" : "two", "country" : "Libya", "downloads" : "1,194", "views" : "149", "sum" : "1,343" },
+					"PSE" :{ "fillKey" : "two", "country" : "Palestine", "downloads" : "1,080", "views" : "234", "sum" : "1,314" },
+					"KWT" :{ "fillKey" : "two", "country" : "Kuwait", "downloads" : "1,070", "views" : "239", "sum" : "1,309" },
+					"CYP" :{ "fillKey" : "two", "country" : "Cyprus", "downloads" : "1,009", "views" : "288", "sum" : "1,297" },
+					"ISL" :{ "fillKey" : "two", "country" : "Iceland", "downloads" : "1,037", "views" : "221", "sum" : "1,258" },
+					"MMR" :{ "fillKey" : "two", "country" : "Myanmar", "downloads" : "1,135", "views" : "112", "sum" : "1,247" },
+					"YEM" :{ "fillKey" : "two", "country" : "Yemen", "downloads" : "998", "views" : "102", "sum" : "1,100" },
+					"URY" :{ "fillKey" : "two", "country" : "Uruguay", "downloads" : "992", "views" : "108", "sum" : "1,100" },
+					"SYR" :{ "fillKey" : "two", "country" : "Syria", "downloads" : "918", "views" : "134", "sum" : "1,052" },
+					"BHR" :{ "fillKey" : "two", "country" : "Bahrain", "downloads" : "901", "views" : "151", "sum" : "1,052" },
+					"NAM" :{ "fillKey" : "one", "country" : "Namibia", "downloads" : "872", "views" : "125", "sum" : "997" },
+					"BIH" :{ "fillKey" : "one", "country" : "Bosnia and Herzegovina", "downloads" : "839", "views" : "149", "sum" : "988" },
+					"BLR" :{ "fillKey" : "one", "country" : "Belarus", "downloads" : "761", "views" : "218", "sum" : "979" },
+					"HND" :{ "fillKey" : "one", "country" : "Honduras", "downloads" : "895", "views" : "74", "sum" : "969" },
+					"MDA" :{ "fillKey" : "one", "country" : "Moldova", "downloads" : "558", "views" : "393", "sum" : "951" },
+					"MKD" :{ "fillKey" : "one", "country" : "Macedonia", "downloads" : "770", "views" : "157", "sum" : "927" },
+					"BRN" :{ "fillKey" : "one", "country" : "Brunei", "downloads" : "760", "views" : "147", "sum" : "907" },
+					"KHM" :{ "fillKey" : "one", "country" : "Cambodia", "downloads" : "813", "views" : "92", "sum" : "905" },
+					"CMR" :{ "fillKey" : "one", "country" : "Cameroon", "downloads" : "799", "views" : "78", "sum" : "877" },
+					"PRY" :{ "fillKey" : "one", "country" : "Paraguay", "downloads" : "795", "views" : "68", "sum" : "863" },
+					"GUY" :{ "fillKey" : "one", "country" : "Guyana", "downloads" : "780", "views" : "79", "sum" : "859" },
+					"SEN" :{ "fillKey" : "one", "country" : "Senegal", "downloads" : "749", "views" : "75", "sum" : "824" },
+					"LUX" :{ "fillKey" : "one", "country" : "Luxembourg", "downloads" : "569", "views" : "239", "sum" : "808" },
+					"CUB" :{ "fillKey" : "one", "country" : "Cuba", "downloads" : "670", "views" : "124", "sum" : "794" },
+					"MWI" :{ "fillKey" : "one", "country" : "Malawi", "downloads" : "645", "views" : "80", "sum" : "725" },
+					"GEO" :{ "fillKey" : "one", "country" : "Georgia", "downloads" : "578", "views" : "140", "sum" : "718" },
+					"MAC" :{ "fillKey" : "one", "country" : "Macao", "downloads" : "513", "views" : "198", "sum" : "711" },
+					"MDV" :{ "fillKey" : "one", "country" : "Maldives", "downloads" : "598", "views" : "95", "sum" : "693" },
+					"CIV" :{ "fillKey" : "one", "country" : "Côte d'Ivoire", "downloads" : "193", "views" : "492", "sum" : "685" },
+					"NIC" :{ "fillKey" : "one", "country" : "Nicaragua", "downloads" : "589", "views" : "64", "sum" : "653" },
+					"RWA" :{ "fillKey" : "one", "country" : "Rwanda", "downloads" : "567", "views" : "72", "sum" : "639" },
+					"UZB" :{ "fillKey" : "one", "country" : "Uzbekistan", "downloads" : "523", "views" : "89", "sum" : "612" },
+					"FJI" :{ "fillKey" : "one", "country" : "Fiji", "downloads" : "485", "views" : "112", "sum" : "597" },
+					"SYC" :{ "fillKey" : "one", "country" : "Seychelles", "downloads" : "305", "views" : "238", "sum" : "543" },
+					"SWZ" :{ "fillKey" : "one", "country" : "Eswatini", "downloads" : "441", "views" : "72", "sum" : "513" },
+					"ABW" :{ "fillKey" : "one", "country" : "Aruba", "downloads" : "450", "views" : "36", "sum" : "486" },
+					"ARM" :{ "fillKey" : "one", "country" : "Armenia", "downloads" : "322", "views" : "95", "sum" : "417" },
+					"GNQ" :{ "fillKey" : "one", "country" : "Guinea", "downloads" : "345", "views" : "67", "sum" : "412" },
+					"BTN" :{ "fillKey" : "one", "country" : "Bhutan", "downloads" : "291", "views" : "54", "sum" : "345" },
+					"GUM" :{ "fillKey" : "one", "country" : "Guam", "downloads" : "261", "views" : "65", "sum" : "326" },
+					"AFG" :{ "fillKey" : "one", "country" : "Afghanistan", "downloads" : "280", "views" : "38", "sum" : "318" },
+					"MNG" :{ "fillKey" : "one", "country" : "Mongolia", "downloads" : "250", "views" : "60", "sum" : "310" },
+					"CUW" :{ "fillKey" : "one", "country" : "Curaçao", "downloads" : "272", "views" : "28", "sum" : "300" },
+					"BLZ" :{ "fillKey" : "one", "country" : "Belize", "downloads" : "255", "views" : "34", "sum" : "289" },
+					"CYM" :{ "fillKey" : "one", "country" : "Cayman Islands", "downloads" : "248", "views" : "31", "sum" : "279" },
+					"LBR" :{ "fillKey" : "one", "country" : "Liberia", "downloads" : "257", "views" : "21", "sum" : "278" },
+					"AZE" :{ "fillKey" : "one", "country" : "Azerbaijan", "downloads" : "213", "views" : "43", "sum" : "256" },
+					"PNG" :{ "fillKey" : "one", "country" : "Papua New Guinea", "downloads" : "224", "views" : "30", "sum" : "254" },
+					"ATG" :{ "fillKey" : "one", "country" : "Antigua and Barbuda", "downloads" : "221", "views" : "29", "sum" : "250" },
+					"SUR" :{ "fillKey" : "one", "country" : "Suriname", "downloads" : "214", "views" : "24", "sum" : "238" },
+					"SLE" :{ "fillKey" : "one", "country" : "Sierra Leone", "downloads" : "216", "views" : "15", "sum" : "231" },
+					"GRD" :{ "fillKey" : "one", "country" : "Grenada", "downloads" : "193", "views" : "38", "sum" : "231" },
+					"SOM" :{ "fillKey" : "one", "country" : "Somalia", "downloads" : "216", "views" : "10", "sum" : "226" },
+					"MNE" :{ "fillKey" : "one", "country" : "Montenegro", "downloads" : "157", "views" : "62", "sum" : "219" },
+					"BMU" :{ "fillKey" : "one", "country" : "Bermuda", "downloads" : "180", "views" : "36", "sum" : "216" },
+					"LSO" :{ "fillKey" : "one", "country" : "Lesotho", "downloads" : "184", "views" : "22", "sum" : "206" },
+					"VCT" :{ "fillKey" : "one", "country" : "Saint Vincent And The Grenadines", "downloads" : "180", "views" : "26", "sum" : "206" },
+					"LCA" :{ "fillKey" : "one", "country" : "Saint Lucia", "downloads" : "149", "views" : "37", "sum" : "186" }
+						},
+						
+					fills: {
+					 defaultFill: '#c0c0c0',
+					 'one':'#fcbba1',
+					 'two': '#e60000',
+					 'three': '#cc0000',
+					 'four': '#b30000',
+					 'five': '#990000'
+					 }
+					  });
+					  
+					   map.legend({
+					   legendTitle : 'Total Views and Downloads',
+					   defaultFillName: 'zero',
+					   labels: {
+					   one: '1-999',
+					   two: '1,000-9,999',
+					   three: '10,000-49,999',
+					   four: '50,000-99,999',
+					   five: '100,000-3,500,000'
+					   	}					   
+					   });
+					
+					
+				</script>
+		</div>
+		</div>
+		</div>
+	</section>
+
+	<section id="contact">
+	  <div class="container">
+		<div class="row">
+		  <div class="col-lg-8 mx-auto">
+			<h2>Contact us</h2>
+			<p class="lead">For any questions or interests in collaboration, please contact 
+			IUPUI University Library's Center for Digital Scholarship at:
+			
+			<script language="JavaScript">
+			var username = "digschol";
+			var hostname = "iupui.edu";
+			var linktext = username + "@" + hostname ;
+			document.write("<a href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>");
+			</script>
+			</p>
+		  </div>
+		</div>
+	  </div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="py-5 bg-dark">
+	  <div class="container">
+		<p class="m-0 text-center text-white">
+		<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+		<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+		<br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+		Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+	  <!-- /.container -->
+	</footer>
+ <!--JS LIBRARIES-->
+
+ <!-- Bootstrap core JavaScript -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Plugin JavaScript -->
+	<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+	<!-- Custom JavaScript for this theme -->
+	<script src="js/scrolling-nav.js"></script>
+
+  </body>
+
+</html>

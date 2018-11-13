@@ -1,0 +1,158 @@
+﻿id,fillKey,country,downloads,views,sum 
+USA,five,United States,"2,092,430","1,264,465","3,356,895"
+DEU,five,Germany,"260,853","177,596","438,449"
+GBR,five,United Kingdom,"175,260","74,518","249,778"
+CHN,five,China,"121,775","55,624","177,399"
+IND,five,India,"134,188","19,183","153,371"
+CAN,five,Canada,"118,051","30,226","148,277"
+PHL,five,Philippines,"89,271","11,611","100,882"
+RUS,four,Russia,"49,139","41,065","90,204"
+AUS,four,Australia,"55,074","18,162","73,236"
+MYS,four,Malaysia,"62,212","10,585","72,797"
+FRA,four,France,"43,709","22,284","65,993"
+ROK,four,South Korea,"38,175","24,514","62,689"
+MEX,four,Mexico,"48,271","5,347","53,618"
+NLD,four,Netherlands,"41,426","11,461","52,887"
+JPN,four,Japan,"30,841","20,147","50,988"
+ITA,four,Italy,"20,872","29,794","50,666"
+IDN,three,Indonesia,"37,669","5,197","42,866"
+UKR,three,Ukraine,"33,693","6,061","39,754"
+POL,three,Poland,"14,092","24,207","38,299"
+ESP,three,Spain,"27,582","8,980","36,562"
+TUR,three,Turkey,"26,489","5,900","32,389"
+THA,three,Thailand,"26,432","4,016","30,448"
+ZAF,three,South Africa,"22,595","5,559","28,154"
+ROU,three,Romania,"23,344","4,417","27,761"
+PAK,three,Pakistan,"21,222","3,574","24,796"
+VEN,three,Venezuela,"22,938",749,"23,687"
+SGP,three,Singapore,"19,908","3,575","23,483"
+EGY,three,Egypt,"18,660","3,005","21,665"
+PER,three,Peru,"18,288","1,282","19,570"
+SWE,three,Sweden,"12,947","6,420","19,367"
+HKG,three,Hong Kong,"14,802","4,340","19,142"
+TWN,three,Taiwan,"13,210","5,558","18,768"
+KAZ,three,Kazakhstan,"17,816",201,"18,017"
+COL,three,Colombia,"15,824","1,912","17,736"
+IRN,three,Iran,"13,364","3,218","16,582"
+BRA,three,Brazil,"11,172","4,286","15,458"
+IRL,three,Ireland,"10,617","3,122","13,739"
+NGA,three,Nigeria,"11,353","1,463","12,816"
+KEN,three,Kenya,"10,133","2,442","12,575"
+NZL,three,New Zealand,"9,340","3,096","12,436"
+DNK,three,Denmark,"7,186","5,121","12,307"
+ISR,three,Israel,"7,037","5,200","12,237"
+VNM,three,Vietnam,"10,165","1,884","12,049"
+AUT,three,Austria,"7,862","3,819","11,681"
+CHE,three,Switzerland,"7,381","4,043","11,424"
+FIN,three,Finland,"9,637","1,679","11,316"
+SAU,three,Saudi Arabia,"9,047","2,012","11,059"
+ETH,three,Ethiopia,"9,783",711,"10,494"
+BEL,three,Belgium,"7,749","2,515","10,264"
+CHL,three,Chile,"8,734","1,508","10,242"
+GRC,three,Greece,"7,646","2,574","10,220"
+ARG,two,Argentina,"8,638","1,162","9,800"
+ARE,two,United Arab Emirates,"7,437","1,442","8,879"
+PRT,two,Portugal,"6,548","2,279","8,827"
+PRI,two,Puerto Rico,"7,872",841,"8,713"
+NOR,two,Norway,"5,558","2,075","7,633"
+LKA,two,Sri Lanka,"5,478",892,"6,370"
+GHA,two,Ghana,"4,862",667,"5,529"
+MLT,two,Malta,"5,147",273,"5,420"
+CZE,two,Czech Republic,"3,720","1,696","5,416"
+DZA,two,Algeria,"4,718",657,"5,375"
+JOR,two,Jordan,"4,327",587,"4,914"
+LTU,two,Lithuania,"3,499","1,240","4,739"
+SRB,two,Serbia,"3,386",953,"4,339"
+DOM,two,Dominican Republic,"4,071",177,"4,248"
+ECU,two,Ecuador,"3,738",479,"4,217"
+UGA,two,Uganda,"3,721",482,"4,203"
+JAM,two,Jamaica,"3,614",589,"4,203"
+BGD,two,Bangladesh,"3,542",547,"4,089"
+GTM,two,Guatemala,"3,337",155,"3,492"
+MUS,two,Mauritius,"2,443","1,027","3,470"
+HRV,two,Croatia,"2,513",881,"3,394"
+LBN,two,Lebanon,"2,766",580,"3,346"
+TUN,two,Tunisia,"2,845",500,"3,345"
+HUN,two,Hungary,"2,428",859,"3,287"
+TTO,two,Trinidad and Tobago,"2,552",544,"3,096"
+IRQ,two,Iraq,"2,636",387,"3,023"
+ZWE,two,Zimbabwe,"2,646",372,"3,018"
+BGR,two,Bulgaria,"2,283",694,"2,977"
+TZA,two,Tanzania,"2,588",326,"2,914"
+NPL,two,Nepal,"2,445",384,"2,829"
+BWA,two,Botswana,"2,476",256,"2,732"
+SVN,two,Slovenia,"2,131",595,"2,726"
+LAO,two,Laos,"2,610",59,"2,669"
+CRI,two,Costa Rica,"2,250",278,"2,528"
+MAR,two,Morocco,"2,162",358,"2,520"
+BOL,two,Bolivia,"2,362",137,"2,499"
+SVK,two,Slovakia,"1,829",632,"2,461"
+BHS,two,Bahamas,"2,194",148,"2,342"
+QAT,two,Qatar,"1,741",556,"2,297"
+PAN,two,Panama,"1,808",225,"2,033"
+ZMB,two,Zambia,"1,821",198,"2,019"
+EST,two,Estonia,"1,476",378,"1,854"
+LVA,two,Latvia,"1,430",418,"1,848"
+OMN,two,Oman,"1,437",269,"1,706"
+ALB,two,Albania,"1,243",274,"1,517"
+SDN,two,Sudan,"1,313",190,"1,503"
+SLV,two,El Salvador,"1,287",91,"1,378"
+BRB,two,Barbados,"1,202",165,"1,367"
+LBY,two,Libya,"1,194",149,"1,343"
+PSE,two,Palestine,"1,080",234,"1,314"
+KWT,two,Kuwait,"1,070",239,"1,309"
+CYP,two,Cyprus,"1,009",288,"1,297"
+ISL,two,Iceland,"1,037",221,"1,258"
+MMR,two,Myanmar,"1,135",112,"1,247"
+YEM,two,Yemen,998,102,"1,100"
+URY,two,Uruguay,992,108,"1,100"
+SYR,two,Syria,918,134,"1,052"
+BHR,two,Bahrain,901,151,"1,052"
+NAM,one,Namibia,872,125,997
+BIH,one,Bosnia and Herzegovina,839,149,988
+BLR,one,Belarus,761,218,979
+HND,one,Honduras,895,74,969
+MDA,one,Moldova,558,393,951
+MKD,one,Macedonia,770,157,927
+BRN,one,Brunei,760,147,907
+KHM,one,Cambodia,813,92,905
+CMR,one,Cameroon,799,78,877
+PRY,one,Paraguay,795,68,863
+GUY,one,Guyana,780,79,859
+SEN,one,Senegal,749,75,824
+LUX,one,Luxembourg,569,239,808
+CUB,one,Cuba,670,124,794
+MWI,one,Malawi,645,80,725
+GEO,one,Georgia,578,140,718
+MAC,one,Macao,513,198,711
+MDV,one,Maldives,598,95,693
+CIV,one,Côte d'Ivoire,193,492,685
+NIC,one,Nicaragua,589,64,653
+RWA,one,Rwanda,567,72,639
+UZB,one,Uzbekistan,523,89,612
+FJI,one,Fiji,485,112,597
+SYC,one,Seychelles,305,238,543
+SWZ,one,Eswatini,441,72,513
+ABW,one,Aruba,450,36,486
+ARM,one,Armenia,322,95,417
+GNQ,one,Guinea,345,67,412
+BTN,one,Bhutan,291,54,345
+GUM,one,Guam,261,65,326
+AFG,one,Afghanistan,280,38,318
+MNG,one,Mongolia,250,60,310
+CUW,one,Curaçao,272,28,300
+BLZ,one,Belize,255,34,289
+CYM,one,Cayman Islands,248,31,279
+LBR,one,Liberia,257,21,278
+AZE,one,Azerbaijan,213,43,256
+PNG,one,Papua New Guinea,224,30,254
+ATG,one,Antigua and Barbuda,221,29,250
+SUR,one,Suriname,214,24,238
+SLE,one,Sierra Leone,216,15,231
+GRD,one,Grenada,193,38,231
+SOM,one,Somalia,216,10,226
+MNE,one,Montenegro,157,62,219
+BMU,one,Bermuda,180,36,216
+LSO,one,Lesotho,184,22,206
+VCT,one,Saint Vincent And The Grenadines,180,26,206
+LCA,one,Saint Lucia,149,37,186
